@@ -1,17 +1,17 @@
-#Muncher
+# Muncher
 A package used to manipulate CSV files
 
-##Description
+## Description
 
 
-###Installation
+### Installation
 
-###Usage
+### Usage
 
-##Authors
-Anqi Guo
-Zhenan Zhuang
-Zuoming Zhang
-Pengli Shao
+## Authors
+Anqi Guo <br />
+Zhenan Zhuang <br />
+Zuoming Zhang <br />
+Pengli Shao <br />
 
 
