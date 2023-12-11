@@ -1,3 +1,9 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt      
+from joblib import Parallel, delayed
+
+        
 class Utility:
     """
     Utility is a comprehensive toolkit for data manipulation, 
@@ -8,8 +14,7 @@ class Utility:
     # Validate Data
     def validate_data_structure(df):
         """Check if the DataFrame has a valid structure."""
-        import pandas as pd
-        
+
         assert isinstance(df, pd.DataFrame), "Input must be a pandas DataFrame"
         if df.empty:
             raise ValueError("DataFrame is empty")
@@ -35,7 +40,6 @@ class Utility:
         - df: pandas DataFrame.
         - column_types: dict, where keys are column names and values are types.
         """
-        import pandas as pd
         
         for column, expected_type in column_types.items():
             if not pd.api.types.is_dtype_equal(df[column].dtype, expected_type):
@@ -59,7 +63,6 @@ class Utility:
     # Statistical Summary
     def generate_statistics(df):
         """Generate extended statistical summaries for a DataFrame."""
-        import pandas as pd
         
         # Separate numeric and categorical columns
         numeric_df = df.select_dtypes(include='number')
@@ -95,8 +98,7 @@ class Utility:
         If no column is specified for histograms or boxplots, visualize the entire DataFrame.
         For scatter, line, and bar plots, specify the x and y columns.
         """
-        import matplotlib.pyplot as plt
-        
+
         if kind in ['hist', 'box']:
             if column:
                 data_to_plot = df[column]
@@ -192,10 +194,7 @@ class Utility:
     # Parallel Processing
     def parallelize_dataframe(df, func, n_cores=4):
         """Split a DataFrame into parts and apply a function in parallel."""
-        from joblib import Parallel, delayed
-        import pandas as pd
-        import numpy as np
-        
+
         df_split = np.array_split(df, n_cores)
         pool = Parallel(n_cores=n_cores)
         df = pd.concat(pool.map(delayed(func), df_split))
