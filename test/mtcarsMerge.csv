@@ -1,0 +1,33 @@
+model,going price,in stock,on sale
+Mazda RX4,30000,2,yes
+Mazda RX4 Wag,32000,3,no
+Datsun 710,32000,1,no
+Hornet 4 Drive,27000,1,no
+Hornet Sportabout,35000,1,yes
+Valiant,24000,5,no
+Duster 360,20000,4,yes
+Merc 240D,34000,2,no
+Merc 230,33000,1,no
+Merc 280,36000,1,no
+Merc 280C,38000,2,yes
+Merc 450SE,44000,3,no
+Merc 450SL,45000,5,no
+Merc 450SLC,48000,6,no
+Cadillac Fleetwood,52000,1,no
+Lincoln Continental,49000,9,no
+Chrysler Imperial,31000,5,no
+Fiat 128,25000,4,no
+Honda Civic,30000,8,yes
+Toyota Corolla,22000,3,yes
+Toyota Corona,23000,2,yes
+Dodge Challenger,18000,4,yes
+AMC Javelin,36000,5,yes
+Camaro Z28,38000,1,no
+Pontiac Firebird,40000,9,yes
+Fiat X1-9,36000,4,yes
+Porsche 914-2,80000,1,no
+Lotus Europa,72000,1,no
+Ford Pantera L,41000,1,no
+Ferrari Dino,120000,1,no
+Maserati Bora,9.99,0,yes
+Volvo 142E,35000,2,no
