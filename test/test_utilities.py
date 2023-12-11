@@ -1,6 +1,6 @@
 import unittest
 import pandas as pd
-from data_muncher.utilities import Utility
+from muncher import Utility
 
 class TestUtility(unittest.TestCase):
 
