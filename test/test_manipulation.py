@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import unittest
-from data_muncher.manipulation import Manipulation
+from muncher import Manipulation
 import time
 import random
 
