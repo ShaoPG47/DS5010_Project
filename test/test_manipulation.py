@@ -2,6 +2,8 @@
 
 import unittest
 from data_muncher.manipulation import Manipulation
+import time
+import random
 
 class TestManipulation(unittest.TestCase):
     def setUp(self):
