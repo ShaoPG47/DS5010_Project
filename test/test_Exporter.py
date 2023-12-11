@@ -9,7 +9,7 @@ import os
 import sqlite3
 import xml.etree.ElementTree as ET
 import json
-from exporter import Exporter
+from muncher import Exporter
 
 class TestExporter(unittest.TestCase):
 
