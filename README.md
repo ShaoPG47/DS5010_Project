@@ -185,15 +185,15 @@ Customize XML tags to suit your data structure.
 ## Authors
 #### Anqi Guo
 Contact Info: [guoanqi57@gmail.com](guoanqi57@gmail.com) <br />
-Main Contributions: utilities
+Main Contributions: muncher.utilities
 
 #### Zhenan Zhuang
 Contact Info: [z28964713@gmail.com](z28964713@gmail.com) <br />
-Main Contributions: manipulation
+Main Contributions: muncher.manipulation
 
 #### Zuoming Zhang
 Contact Info: [zhang.zu@northeastern.edu](zhang.zu@northeastern.edu) <br />
-Main Contributions: exporter
+Main Contributions: muncher.exporter
 
 #### Pengli Shao
 Contact Info: [shao.pe@northeastern.edu](shao.pe@northeastern.edu) <br />
