@@ -1,5 +1,5 @@
 # Muncher
-A python package used to manipulate data sets.<br />
+A python package for data analytics.<br />
 [Package Main Website](https://github.com/ShaoPG47/DS5010_Project.git)
 
 ## Description
