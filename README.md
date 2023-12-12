@@ -67,7 +67,7 @@ meg_list.merge([i,j], key) #left merge the ith and jth element in data list by k
 ```
 
 ### 3. Manipulation
-
+The Manipulation module involves performing fundamental data processing tasks such as data cleaning, sampling and selection.
 #### Create Dataset
 ```py
 from muncher import Manipulation
@@ -89,12 +89,16 @@ df = Manipulation(dataset)
 ```py
 # add 1 for each row in column 1
 df.columnManipulation(1, lambda x: x + 1)
+
 # handle missing value using mean for numerical data
 df.dataCleaning(missing_value_strategy='mean')
+
 # select data in specific columns and rows
 df.dataSelection(columns=[0, 2, 3], rows=[1, 3, 5])
+
 # get mean of column 1 and sum of column 2 for distinct value of column 3
 df.dataGroupBy(groupby_column_idx=3, aggregation_functions={1: 'mean', 2: 'sum'})
+
 # random sample 50% of data
 df.dataSampling(fraction=0.5)
 ```
