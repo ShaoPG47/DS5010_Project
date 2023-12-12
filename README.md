@@ -68,6 +68,36 @@ meg_list.merge([i,j], key) #left merge the ith and jth element in data list by k
 
 ### 3. Manipulation
 
+#### Create Dataset
+```py
+from muncher import Manipulation
+
+dataset = [
+            ['Name', 'Age', 'Salary', 'Department'],
+            ['Alice', 25, 50000, 'HR'],
+            ['Bob', 30, 60000, 'Finance'],
+            ['Charlie', 28, 55000, 'IT'],
+            ['David', 35, 70000, 'Finance'],
+            ['Eva', 27, 52000, 'HR'],
+            ['Frank', 32, None, 'IT']
+        ]
+
+df = Manipulation(dataset)
+```
+
+#### Data Manipulation
+```py
+# add 1 for each row in column 1
+df.columnManipulation(1, lambda x: x + 1)
+# handle missing value using mean for numerical data
+df.dataCleaning(missing_value_strategy='mean')
+# select data in specific columns and rows
+df.dataSelection(columns=[0, 2, 3], rows=[1, 3, 5])
+# get mean of column 1 and sum of column 2 for distinct value of column 3
+df.dataGroupBy(groupby_column_idx=3, aggregation_functions={1: 'mean', 2: 'sum'})
+# random sample 50% of data
+df.dataSampling(fraction=0.5)
+```
 
 ### 4. Utilities
 
