@@ -9,7 +9,7 @@ setup(
     version= ver,
     description = DESCRIPTION,
     packages=find_packages(),
-    install_requires=['xml', 'sqlite3','pandas','numpy','matplotlib','joblib'],
+    install_requires=['sqlite3','pandas','numpy','matplotlib','joblib'],
     keywords=['python', 'data manipulation', 'data visualization','importing and exporting data','merge data sets'],
     classifiers=[
         'Development Status :: 1 - Planning',
