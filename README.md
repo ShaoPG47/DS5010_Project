@@ -7,7 +7,9 @@ Muncher is a package that provides importing, merging, manipulation, and exporti
 It also supports data visualization and statistical analysis.
 
 ## Installation
-Currently, Muncher can be installed by downloading the source code directly. Future versions may be available via pip.
+```bash
+pip install git+https://github.com/ShaoPG47/muncher.git
+```
 
 ## Usage
 
