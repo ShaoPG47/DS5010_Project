@@ -1,5 +1,5 @@
-from muncher import importer as imp, merger
-from muncher import merger as meg
+from muncher import Importer as imp
+from muncher import Merger as meg
 
 
 
