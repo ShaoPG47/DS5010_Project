@@ -107,22 +107,18 @@ and efficient processing in Python data analysis projects.
 import pandas as pd
 from muncher.utilities import Utility
 
+# Create a DataFrame for testing
 df = pd.DataFrame({
     'A': [1, 2, 3, None, 5],
     'B': ['x', 'y', 'z', 'x', 'y'],
     'C': [1.1, 2.2, 3.3, 4.4, 5.5]
 })
-print(Utility.validate_data_structure(data))
+print(Utility.validate_data_structure(df))
 # Output: True
 ```
 #### Validate Data Integrity 
 ```py
-df = pd.DataFrame({
-    'A': [1, 2, 3, None, 5],
-    'B': ['x', 'y', 'z', 'x', 'y'],
-    'C': [1.1, 2.2, 3.3, 4.4, 5.5]
-})
-print(Utility.validate_data_integrity(data))
+print(Utility.validate_data_integrity(df))
 # Output:ValueError: DataFrame contains missing values
 ```
 #### Check Column Values 
