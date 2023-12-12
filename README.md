@@ -103,7 +103,36 @@ df.dataSampling(fraction=0.5)
 
 
 ### 5. Exporter
+The Exporter module in Muncher is designed for exporting data to various formats such as CSV, XML, JSON, and SQLite databases. This tool allows users to easily convert and export data for diverse applications.
 
+#### Export to CSV file
+```py
+from muncher import exporter as exp
+
+data = [[...]]  # Your data here
+exporter = exp.Exporter(data)
+exporter.to_csv('path/to/yourfile.csv')
+```
+
+#### Export to XML
+```py
+exporter.to_xml('path/to/yourfile.xml', root_tag='YourRootTag', row_tag='YourRowTag')
+```
+
+#### Export to JSON
+```py
+exporter.to_json('path/to/yourfile.json')
+```
+
+#### Export to SQLite Database
+```py
+exporter.to_sqlite('path/to/database.db', 'your_table_name')
+```
+
+#### Notes
+Ensure data is correctly formatted for each export type.
+For SQLite export, the first row in your data should contain the column names.
+Customize XML tags to suit your data structure.
 
 ## Known Issues
 1. importer.table() function would not work if there is NA values in data set <br />
@@ -120,7 +149,7 @@ Main Contributions:
 
 #### Zuoming Zhang
 Contact Info: [zhang.zu@northeastern.edu](zhang.zu@northeastern.edu) <br />
-Main Contributions: 
+Main Contributions: exporter
 
 #### Pengli Shao
 Contact Info: [shao.pe@northeastern.edu](shao.pe@northeastern.edu) <br />
