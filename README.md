@@ -100,7 +100,45 @@ df.dataSampling(fraction=0.5)
 ```
 
 ### 4. Utilities
+Utility is a comprehensive toolkit for data manipulation, ensuring data integrity, statistical analysis, visualization, 
+and efficient processing in Python data analysis projects.
+#### Validate Data Structure 
+```py
+import pandas as pd
+from muncher import utilities as uti
 
+df = pd.DataFrame({
+    'A': [1, 2, 3, None, 5],
+    'B': ['x', 'y', 'z', 'x', 'y'],
+    'C': [1.1, 2.2, 3.3, 4.4, 5.5]
+})
+print(Utility.validate_data_structure(data)) # Output: True
+```
+#### Validate Data Integrity 
+```py
+df = pd.DataFrame({
+    'A': [1, 2, 3, None, 5],
+    'B': ['x', 'y', 'z', 'x', 'y'],
+    'C': [1.1, 2.2, 3.3, 4.4, 5.5]
+})
+print(Utility.validate_data_integrity(data)) # Output:ValueError: DataFrame contains missing values
+```
+#### Check Column Values 
+```py
+# Check if a column in the DataFrame contains only valid values
+valid_values_for_A = [1, 2, 3, 5]
+print(Utility.check_column_values(df, 'A',valid_values_for_A)) # Output: ValueError: Column A contains invalid values
+```
+#### Statistical Summary 
+```py
+# Generate extended statistical summaries for a DataFrame
+summary = Utility.generate_statistics(df)
+# Output: ValueError: Column A contains invalid values
+```
+#### Basic Visualizations 
+```py
+plot = Utility.plot_data(df, 'A', kind ='box')
+```
 
 ### 5. Exporter
 The Exporter module in Muncher is designed for exporting data to various formats such as CSV, XML, JSON, and SQLite databases. This tool allows users to easily convert and export data for diverse applications.
