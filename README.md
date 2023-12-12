@@ -11,14 +11,14 @@ Currently, Muncher can be installed by downloading the source code directly. Fut
 
 ## Usage
 
-### 1. importer
-importer is a tool for reading in .csv files without using any external packages,
+### 1. Importer
+Importer is a tool for reading in .csv files without using any external packages,
 it contains certain functions that can help users to understand some basic informations of the 
 dataset.
 
 #### Load in csv file
 ```py
-from muncher import importer as imp
+from muncher import Importer as imp
 
 df = imp("your_csv_file.csv")
 df.readCsv()
@@ -44,14 +44,14 @@ df.dropcol() #Drop a column by index or column name
 df.dropna() #Drop all rows with NA values
 ```
 
-### 2. merger
-merger is a tool for multiple data merging, it helps user to understand 
+### 2. Merger
+Merger is a tool for multiple data merging, it helps user to understand 
 which pair of importer type data sets in the the data sets list has common columns and it's name.
 
 #### Create the data set list
 ```py
-from muncher import importer as imp
-from muncher import merger as meg
+from muncher import Importer as imp
+from muncher import Merger as meg
 df1 = imp("your_csv_file.csv")
 df2 = imp("your_csv_file.csv")
 df1.readCsv()
@@ -182,11 +182,11 @@ Customize XML tags to suit your data structure.
 ## Authors
 #### Anqi Guo
 Contact Info: [guoanqi57@gmail.com](guoanqi57@gmail.com) <br />
-Main Contributions: 
+Main Contributions: utilities
 
 #### Zhenan Zhuang
 Contact Info: [z28964713@gmail.com](z28964713@gmail.com) <br />
-Main Contributions: 
+Main Contributions: manipulation
 
 #### Zuoming Zhang
 Contact Info: [zhang.zu@northeastern.edu](zhang.zu@northeastern.edu) <br />
