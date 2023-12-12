@@ -100,7 +100,7 @@ df.dataSampling(fraction=0.5)
 ```
 
 ### 4. Utilities
-Utility is a comprehensive toolkit for data manipulation, ensuring data integrity, statistical analysis, visualization, 
+Utility is a comprehensive toolkit for ensuring data integrity, statistical analysis, visualization, 
 and efficient processing in Python data analysis projects.
 #### Validate Data Structure 
 ```py
