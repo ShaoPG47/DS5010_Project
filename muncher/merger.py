@@ -1,9 +1,9 @@
 
-from muncher.importer import importer
-class merger:
+from muncher.importer import Importer
+class Merger:
     def __init__(self, dfLst): #dfLst is a list of type importer data sets
         for i in range(len(dfLst)):
-            if not isinstance(dfLst[i], importer):
+            if not isinstance(dfLst[i], Importer):
                 raise TypeError("merger only accept type importer data sets, the list contains non-importer data")
         self.dfs = dfLst
         
