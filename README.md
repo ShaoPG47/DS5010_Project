@@ -105,14 +105,15 @@ and efficient processing in Python data analysis projects.
 #### Validate Data Structure 
 ```py
 import pandas as pd
-from muncher import utilities as uti
+from muncher.utilities import Utility
 
 df = pd.DataFrame({
     'A': [1, 2, 3, None, 5],
     'B': ['x', 'y', 'z', 'x', 'y'],
     'C': [1.1, 2.2, 3.3, 4.4, 5.5]
 })
-print(Utility.validate_data_structure(data)) # Output: True
+print(Utility.validate_data_structure(data))
+# Output: True
 ```
 #### Validate Data Integrity 
 ```py
@@ -121,13 +122,15 @@ df = pd.DataFrame({
     'B': ['x', 'y', 'z', 'x', 'y'],
     'C': [1.1, 2.2, 3.3, 4.4, 5.5]
 })
-print(Utility.validate_data_integrity(data)) # Output:ValueError: DataFrame contains missing values
+print(Utility.validate_data_integrity(data))
+# Output:ValueError: DataFrame contains missing values
 ```
 #### Check Column Values 
 ```py
 # Check if a column in the DataFrame contains only valid values
 valid_values_for_A = [1, 2, 3, 5]
-print(Utility.check_column_values(df, 'A',valid_values_for_A)) # Output: ValueError: Column A contains invalid values
+print(Utility.check_column_values(df, 'A',valid_values_for_A))
+# Output: ValueError: Column A contains invalid values
 ```
 #### Statistical Summary 
 ```py
