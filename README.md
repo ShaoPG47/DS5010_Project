@@ -200,6 +200,13 @@ Contact Info: [shao.pe@northeastern.edu](shao.pe@northeastern.edu) <br />
 Main Contributions: muncher.importer, muncher.merger
 
 ## Reference
+This project utilizes the following references:
+
+1. Python Standard Libraries (csv, json, xml.etree.ElementTree, sqlite3): Python Software Foundation. (2023). Python documentation for version 3.12.1 [https://www.python.org](https://www.python.org)
+2. Van Rossum, G., & Drake, F. L. (2009). Python 3 Reference Manual. CreateSpace.
+3. McKinney, W. (2012). Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython. O'Reilly Media.
+4. Matplotlib: Python plotting — Matplotlib 3.3.2 documentation. [https://matplotlib.org](https://matplotlib.org)
+5. Joblib: Running Python functions as pipeline jobs. [https://joblib.readthedocs.io](https://joblib.readthedocs.io)
 
 
 
