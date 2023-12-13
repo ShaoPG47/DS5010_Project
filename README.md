@@ -202,12 +202,9 @@ Main Contributions: muncher.importer, muncher.merger
 ## Reference
 This project utilizes the following references:
 
-1. Python Standard Libraries (csv, json, xml.etree.ElementTree, sqlite3): Python Software Foundation. (2023). Python documentation for version 3.12.1 [https://www.python.org](https://www.python.org)
-2. Van Rossum, G., & Drake, F. L. (2009). Python 3 Reference Manual. CreateSpace.
-3. McKinney, W. (2012). Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython. O'Reilly Media.
-4. pandas: Powerful Python data analysis toolkit. [https://pandas.pydata.org](https://pandas.pydata.org)
-5. NumPy: The fundamental package for scientific computing with Python. [https://numpy.org](https://numpy.org)
-6. Matplotlib: Python plotting — Matplotlib 3.3.2 documentation. [https://matplotlib.org](https://matplotlib.org)
-7. Joblib: Running Python functions as pipeline jobs. [https://joblib.readthedocs.io](https://joblib.readthedocs.io)
+1. pandas: Powerful Python data analysis toolkit. [https://pandas.pydata.org](https://pandas.pydata.org)
+2. NumPy: The fundamental package for scientific computing with Python. [https://numpy.org](https://numpy.org)
+3. Matplotlib: Python plotting — Matplotlib 3.3.2 documentation. [https://matplotlib.org](https://matplotlib.org)
+4. Joblib: Running Python functions as pipeline jobs. [https://joblib.readthedocs.io](https://joblib.readthedocs.io)
 
 
